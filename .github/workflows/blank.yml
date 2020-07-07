@@ -25,10 +25,5 @@ jobs:
     - name: Build
       run: |
         npm install
-        npm run-script deploy
-    - name: Deploy
-      with:
-        SSH: $(Deploy keys)
-        BRANCH: gh-pages
-        FOLDER: dist/ngfirstApp
+        npm run deploy
         
