@@ -28,7 +28,7 @@ jobs:
         npm run-script deploy
     - name: Deploy
       with:
-        SSH: ${{Deploy key }}
+        SSH: ${d5:80:07:03:86:4f:57:07:48:0f:16:40:30:47:fb:4c}}
         BRANCH: gh-pages
         FOLDER: dist/angular-ci-cd
         
