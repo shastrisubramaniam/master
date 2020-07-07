@@ -27,9 +27,8 @@ jobs:
         npm install
         npm run-script deploy
     - name: Deploy
-      uses: shastrsubramaniam/github-pages-deploy-action@releases/v3
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SSH: ${{Deploy key }}
         BRANCH: gh-pages
         FOLDER: dist/angular-ci-cd
         
